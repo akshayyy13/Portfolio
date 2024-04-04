@@ -1,9 +1,9 @@
-@media (max-width:1200px) {
-  .container{
+@media (max-width: 1200px) {
+  .container {
     max-width: 1200px;
     width: 100%;
   }
-  .footer-wrapper{
+  .footer-wrapper {
     flex-wrap: wrap;
   }
   /* .skills-container{
@@ -17,55 +17,48 @@
   } */
 }
 
-
-
-
-
-@media (max-width:800px){
-    .skills-container{
-        flex-wrap: wrap;
-    }
-    .skill-container-left{
-        width: 100%;
-    }
-    .skill-container-right{
-        width: 100%;
-    }
-    .skill-subHeading{
-        width: 100%;
-    }
-    .skill-fade-text{
-        font-size: 11.5rem;
-        bottom: -18vh;
-    }
-    .user-img{
-        padding: 1.8rem;
-    }
-    #project1{
-        background-image: url("./images/projects/1m.png");
-        background-size: cover;
-    }
-    
+@media (max-width: 800px) {
+  .skills-container {
+    flex-wrap: wrap;
+  }
+  .skill-container-left {
+    width: 100%;
+  }
+  .skill-container-right {
+    width: 100%;
+  }
+  .skill-subHeading {
+    width: 100%;
+  }
+  .skill-fade-text {
+    font-size: 11.5rem;
+    bottom: -11%;
+  }
+  .user-img {
+    padding: 1.8rem;
+  }
+  #project3{
+    background-image: url("./images/projects/3.phone.png");
+  }
+  
 }
 
-
-@media (max-width:550px) {
-    .hero-section{
-        flex-wrap: wrap;
-    }
-    .faded-text{
-        bottom: -13%;
-    }
-    .logo-container{
-        display: none;
-    }
-    .navbar{
-        justify-content: center;
-        background-color: rgb(231, 231, 231);
-        height: 9vh;
-    }
-    .blob-style{
-        width: 70vw;
-    }
-
+@media (max-width: 550px) {
+  .hero-section {
+    flex-wrap: wrap;
+  }
+  .faded-text {
+    bottom: -13%;
+  }
+  .logo-container {
+    display: none;
+  }
+  .navbar {
+    justify-content: center;
+    background-color: rgb(231, 231, 231);
+    height: 9vh;
+  }
+  .blob-style {
+    width: 70vw;
+  }
 }
