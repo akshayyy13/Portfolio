@@ -71,7 +71,7 @@ a {
   user-select: none;
   font-size: 8em;
   color: rgb(231, 231, 231);
-  bottom: -13vh;
+  bottom: -17%;
   left: -2vw;
   font-weight: bold;
   transition: all 3s;
@@ -348,7 +348,7 @@ a {
   left: 10%;
 }
 .project-content-right {
-  right: 10%;
+  right: -10%;
 }
 .project-skills-container {
   width: 60%;
@@ -393,25 +393,51 @@ a {
 .project-card:hover .project-content {
   transform: scale(1.1);
 }
-
-#project1 {
+#project1{
+  background-image: url(./images/projects/Screenshot\ 2024-04-04\ at\ 16.17.22.png);
+  /* background-size: contain; */
+}
+#project2{
+  margin-left: 10%;
+  /* background-size: contain; */
+  background-image: url(./images/projects/game.png);
+}
+#project3 {
   background-image: url(./images/projects/1.png);
 }
-#project2 {
+#project4 {
   background-image: url(./images/projects/2.png);
   margin-left: 10%;
 }
-#project3 {
+#project5 {
   background-image: url(./images/projects/3.png);
 }
-#project4 {
+#project6 {
   margin-left: 10%;
   background-image: url(./images/projects/4.png);
 }
-
+@media (max-width:900px) {
+  #project1{
+    background-image: url("./images/projects/1.phone.png");
+  }
+  #project2{
+    background-image: url("./images/projects/2.phone.png");
+  }
+  #project4{
+    background-image: url("./images/projects/4.phone.png");
+  }
+  #project5{
+    background-image: url("./images/projects/5.phone.png");
+  }
+  #project6{
+    background-image: url("./images/projects/6.phone.png");
+  }
+  
+}
 @media (max-width: 1260px) {
   #project2,
-  #project4 {
+  #project4,
+  #project6 {
     margin-left: 0%;
   }
   .project-container {
@@ -435,9 +461,6 @@ a {
     font-size: 10px;
     padding: 0.2rem 0.2rem;
   }
-  .project-content {
-    bottom: 5%;
-  }
   .project-number {
     font-size: 3rem;
   }
@@ -453,9 +476,6 @@ a {
 @media (max-width: 375px) {
   .project-skill {
     display: none;
-  }
-  .project-content {
-    bottom: 10%;
   }
 }
 
@@ -484,7 +504,7 @@ a {
   font-size: 15em;
   font-style: bold;
   color: rgb(231, 231, 231);
-  bottom: -20vh;
+  bottom: -20%;
   right: -5%;
   overflow-y: hidden;
   user-select: none;
