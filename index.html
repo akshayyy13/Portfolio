@@ -16,13 +16,15 @@
     />
     <style>
       :root {
-        --bg: #0a0d13;
-        --surface: #12161f;
-        --surface-2: #171c27;
-        --border: #232936;
-        --text: #e7e9ee;
-        --text-muted: #8b93a7;
-        --text-dim: #5b6274;
+        --bg: #0f1117;
+        --surface: #171b24;
+        --surface-2: #1d2230;
+        --border: #2b3242;
+
+        --text: #f3f5f7;
+        --text-muted: #b4bccd;
+        --text-dim: #8d95a8;
+
         --accent: #4fe0c9;
         --accent-dim: #2a6e63;
         --accent-soft: rgba(79, 224, 201, 0.1);
@@ -41,7 +43,7 @@
         background: var(--bg);
         color: var(--text);
         font-family: "Inter", sans-serif;
-        line-height: 1.6;
+        line-height: 1.75;
         -webkit-font-smoothing: antialiased;
       }
       h1,
@@ -278,8 +280,8 @@
         color: var(--accent);
       }
       .sec-title {
-        font-size: 28px;
-        font-weight: 600;
+        font-size: 30px;
+        font-weight: 700;
         letter-spacing: -0.01em;
       }
       .sec-sub {
@@ -297,7 +299,8 @@
         gap: 60px;
       }
       .about-grid p {
-        color: var(--text-muted);
+        color: #c3cad9;
+        line-height: 1.9;
         margin-bottom: 16px;
         font-size: 16px;
       }
@@ -353,8 +356,9 @@
       .exp-list li {
         padding-left: 20px;
         position: relative;
-        color: var(--text-muted);
-        font-size: 15px;
+        color: #c5ccda;
+        font-size: 15.5px;
+        line-height: 1.8;
       }
       .exp-list li::before {
         content: "▹";
@@ -425,7 +429,8 @@
         margin-bottom: 10px;
       }
       .proj-card p {
-        color: var(--text-muted);
+        color: #c1c8d8;
+        line-height: 1.75;
         font-size: 14px;
         margin-bottom: 18px;
         flex-grow: 1;
@@ -474,11 +479,12 @@
       }
       .skill-cat {
         font-family: "JetBrains Mono", monospace;
-        font-size: 12px;
+        font-size: 14px;
         color: var(--accent);
         margin-bottom: 12px;
         text-transform: uppercase;
-        letter-spacing: 0.06em;
+        font-weight: 600;
+        letter-spacing: 0.02em;
       }
       .skill-tags {
         display: flex;
@@ -486,7 +492,12 @@
         gap: 8px;
       }
       .skill-tags .tag {
-        color: var(--text-muted);
+        color: var(--text);
+        background: rgba(79, 224, 201, 0.08);
+        border: 1px solid rgba(79, 224, 201, 0.18);
+        padding: 7px 14px;
+        font-size: 12px;
+        font-weight: 500;
       }
 
       /* ---------- ACHIEVEMENTS ---------- */
