@@ -2,7 +2,7 @@
 
 Personal portfolio site. Static HTML/CSS/JS, no build step, no framework.
 
-**Live:** [add your deployed URL here once live]
+**Live:** https://akshayyy13.github.io/Portfolio/
 
 ## Stack
 
