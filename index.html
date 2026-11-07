@@ -342,11 +342,6 @@
         font-size: 18px;
         margin-bottom: 4px;
       }
-      .exp-context {
-        color: var(--text-muted);
-        font-size: 14px;
-        margin-bottom: 20px;
-      }
       .exp-meta {
         color: var(--text-dim);
         font-size: 13px;
@@ -774,26 +769,21 @@
               Tata Consultancy Services (TCS) · Apr 2025 — Present
             </div>
           </div>
-          <p class="exp-context">
-            Rapp is the React/Node application, Reltio is the master data
-            management (MDM) platform, glprod is the ERP integration target,
-            and IsPortal is a customer account flag used in merge workflows.
-          </p>
           <ul class="exp-list">
             <li>
-              Root-caused an <b>IsPortal</b> customer-flag defect behind
+              Root-caused an <b>IsPortal</b> customer account-flag defect behind
               account-merge failures in approximately <b>5% of merges</b>;
               deployed the fix to <b>AWS Lambda</b>, eliminating the need for
               manual repairs.
             </li>
             <li>
-              Fixed a bidirectional bug in <b>Rapp (React.js, Node.js)</b> where
-              creating a Bill-To/Ship-To relationship did not create its
-              reverse in <b>Reltio</b>, leaving approximately
+              Fixed a bidirectional relationship bug in <b>Rapp</b>, the
+              React/Node customer-data app, where creating a Bill-To/Ship-To
+              relationship did not create its reverse in <b>Reltio</b> (the
+              master data management platform), leaving approximately
               <b>30% of customers' relationships one-sided</b>. Reworked
-              linking logic across three core files so relationships sync to
-              <b>glprod</b> for ERP ID assignment, with manual fixes reduced from
-              <b>10–15 to 2–3 per month</b>.
+              linking logic so both directions sync to <b>glprod</b>, the ERP
+              system, reducing manual fixes from <b>10–15 to 2–3 per month</b>.
             </li>
             <li>
               Built an advanced search-and-match report comparing
