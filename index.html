@@ -6,7 +6,7 @@
     <title>Akshay Shrivastava — Software Engineer</title>
     <meta
       name="description"
-      content="Akshay Shrivastava — Software Engineer building full-stack and AI-integrated products."
+      content="Akshay Shrivastava — Software Engineer at TCS, building full-stack products and enterprise data-management solutions."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -374,7 +374,7 @@
       /* ---------- PROJECTS ---------- */
       .proj-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 22px;
       }
       .proj-card {
@@ -694,11 +694,10 @@
             &amp; AI-integrated products.
           </h1>
           <p class="lede">
-            Software Engineer at TCS with a strong foundation in full-stack
-            development and competitive programming. I build production-grade
-            applications with React, Next.js, Node.js and MongoDB — including an
-            AI chat platform with persistent memory and an e-learning platform
-            with payment integration.
+            Software Engineer at TCS building enterprise data-management
+            solutions with Java, React.js, Node.js, Reltio and AWS. I also build
+            full-stack products, including an AI chat platform and an
+            e-learning platform with Razorpay payments.
           </p>
           <div class="btn-row">
             <a href="#projects" class="btn btn-primary">View Projects →</a>
@@ -743,23 +742,23 @@
             <h2 class="sec-title">About</h2>
           </div>
           <p>
-            I'm currently a <b>Software Engineer at TCS</b>, working on
-            enterprise data-management workflows for a client project built on
-            <b>Reltio</b> — backend business logic and entity-matching systems
-            that decide whether two customer records are actually the same
-            customer.
+            I'm a <b>Software Engineer at TCS</b>, working on customer
+            data-management workflows in Rapp and <b>Reltio</b>. My work
+            includes fixing account and address synchronization, keeping
+            Bill-To/Ship-To relationships in sync for ERP processing, and
+            building account search-and-match tools.
           </p>
           <p>
-            Outside of client work, I build and ship full-stack products end to
-            end: an AI chat platform with persistent cross-session memory, and
-            an e-learning platform with real payment infrastructure. I also
-            compete — <b>ICPC Asia West Regionalist</b> and a
-            <b>1848-rated LeetCode Knight</b>.
+            Outside of work, I build full-stack products with
+            <b>React.js, Next.js, Node.js and MongoDB</b>, including an AI chat
+            platform with persistent memory and an e-learning platform with
+            Razorpay payments. I'm also an <b>ICPC Asia West Regionalist</b>
+            with a <b>1848 peak LeetCode rating</b>.
           </p>
         </div>
         <div class="facts reveal">
           <div class="fact">
-            <span>Based in</span><span>Bangalore, Karnataka, IN</span>
+            <span>Based in</span><span>Bangalore, India</span>
           </div>
           <div class="fact">
             <span>Role</span><span>Software Engineer</span>
@@ -770,6 +769,9 @@
           </div>
           <div class="fact">
             <span>Email</span><span>akshay.codes13@gmail.com</span>
+          </div>
+          <div class="fact">
+            <span>Phone</span><span>+91 7357877122</span>
           </div>
           <div class="fact">
             <span>Status</span
@@ -794,48 +796,30 @@
           </div>
           <ul class="exp-list">
             <li>
-              Developed and maintained enterprise customer data management
-              solutions on the <b>Reltio MDM</b> platform using
-              <b>Java, React.js, Node.js, REST APIs, Maven, and AWS</b>.
+              Root-caused an <b>IsPortal</b> customer-flag defect behind
+              account-merge failures in approximately <b>5% of merges</b>;
+              deployed the fix to <b>AWS Lambda</b>, eliminating manual repairs
+              with no recurrence since release.
             </li>
-
             <li>
-              Resolved a critical production issue in the
-              <b>IsPortal</b> customer flag during account merging, eliminating
-              platform-wide merge failures and restoring customer data
-              integrity.
+              Fixed a bidirectional bug in <b>Rapp (React.js, Node.js)</b> where
+              creating a Bill-To/Ship-To relationship did not create its
+              reverse in <b>Reltio</b>, leaving approximately
+              <b>30% of customers' relationships one-sided</b>. Reworked
+              linking logic across three core files so relationships sync to
+              <b>glprod</b> for ERP ID assignment, reducing manual fixes from
+              <b>10–15 to 2–3 per month</b>.
             </li>
-
             <li>
-              Built backend features and business logic in <b>Java</b>,
-              deploying production changes to <b>AWS Lambda</b> and supporting
-              enterprise release workflows.
+              Built an advanced search-and-match report comparing
+              <b>5–6 entity fields</b> (UCM ID, name, address, ZIP, country and
+              state) and ranking accounts by match percentage; usage increased
+              approximately <b>15%</b> based on team feedback.
             </li>
-
             <li>
-              Engineered bidirectional relationship synchronization using
-              <b>React.js</b> and <b>Node.js</b>, automating reverse
-              relationship creation while preventing duplicate records.
-            </li>
-
-            <li>
-              Designed and implemented a similarity-based customer search
-              enhancement that computes dynamic match percentages across
-              multiple customer attributes, improving duplicate record
-              detection.
-            </li>
-
-            <li>
-              Implemented validation rules for ERP synchronization, ensuring
-              accurate customer relationship processing before integration with
-              <b>GLPROD</b>.
-            </li>
-
-            <li>
-              Deployed frontend applications to <b>Amazon S3</b> using
-              <b>AWS CLI</b> and collaborated with cross-functional teams to
-              investigate production issues, review code, and deliver reliable
-              releases.
+              Fixed an address-sync defect in the account-creation module
+              affecting approximately <b>10% of accounts created via Rapp</b>,
+              and refactored it to remove repeated manual lookups and fixes.
             </li>
           </ul>
         </div>
@@ -873,16 +857,18 @@
             </div>
             <h3>AI Chat Platform</h3>
             <p>
-              Full-stack AI chat app with Google OAuth, MongoDB persistence, and
-              multi-model support (Gemini, OpenAI) via a persistent memory layer
-              built on mem0AI that retains context across sessions. Handles
-              image, text, CSV and DOCX uploads through Cloudinary, with
-              real-time streaming responses and markdown rendering.
+              Built a full-stack AI chat application with Google OAuth,
+              MongoDB user persistence, and NodeMailer/SMTP email verification.
+              Gemini and OpenAI models use persistent cross-session memory
+              through mem0. Supports image, text, CSV and DOCX uploads via
+              Cloudinary, plus streamed responses, markdown rendering, syntax
+              highlighting, and chat editing and deletion. Deployed on Vercel.
             </p>
             <div class="tag-row">
               <span class="tag">Next.js</span><span class="tag">TypeScript</span
               ><span class="tag">MongoDB</span
-              ><span class="tag">Gemini API</span>
+              ><span class="tag">Gemini API</span
+              ><span class="tag">OpenAI</span>
             </div>
           </div>
 
@@ -910,66 +896,22 @@
             </div>
             <h3>CodeBud — E-Learning Platform</h3>
             <p>
-              Dual-role (Student/Instructor) e-learning platform with course
-              creation, enrollment and content management. Integrated Razorpay
-              end-to-end — order creation, webhook-based payment verification
-              and transaction tracking — with JWT auth, role-based access, and
-              OTP email verification.
+              Full-stack e-learning platform for Students and Instructors,
+              with course creation, enrollment, and content management.
+              Integrated Razorpay course purchases with order creation,
+              webhook-based payment verification, and transaction tracking.
+              Includes JWT authentication, role-based authorization, OTP email
+              verification, and REST APIs with CRUD for users, courses, and
+              enrollments.
             </p>
             <div class="tag-row">
               <span class="tag">React.js</span><span class="tag">Node.js</span
-              ><span class="tag">Express</span><span class="tag">MongoDB</span>
+              ><span class="tag">Express.js</span
+              ><span class="tag">MongoDB</span
+              ><span class="tag">Razorpay</span>
             </div>
           </div>
 
-          <div class="proj-card reveal">
-            <div class="proj-top">
-              <div class="proj-icon">CC</div>
-              <div class="proj-links">
-                <a
-                  href="https://clima-cast-snowy.vercel.app/"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Live demo"
-                  title="Live demo"
-                  >↗</a
-                >
-                <a
-                  href="https://github.com/akshayyy13/Clima-Cast"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="GitHub repo"
-                  title="GitHub"
-                  >◆</a
-                >
-              </div>
-            </div>
-            <h3>Clima-Cast</h3>
-            <p>
-              Weather forecasting app with a dynamic background that reflects
-              live conditions for the user's current location or any searched
-              location. Uses geolocation to surface current conditions plus a
-              7-day forecast, visualized on an interactive graph.
-            </p>
-            <div class="tag-row">
-              <span class="tag">React.js</span
-              ><span class="tag">JavaScript</span
-              ><span class="tag">Weather API</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="other-strip reveal">
-          <span class="label"
-            >Also built: a terminal-based chat app in Python (client/server
-            sockets) — no live deploy, demoed on LinkedIn.</span
-          >
-          <a
-            href="https://github.com/akshayyy13/Chat_App"
-            target="_blank"
-            rel="noopener"
-            >View on GitHub →</a
-          >
         </div>
       </div>
     </section>
@@ -986,6 +928,7 @@
             <div class="skill-cat">Languages</div>
             <div class="skill-tags">
               <span class="tag">C++</span>
+              <span class="tag">Python</span>
               <span class="tag">Java</span>
               <span class="tag">JavaScript</span>
               <span class="tag">TypeScript</span>
@@ -1017,11 +960,15 @@
           </div>
 
           <div class="reveal">
-            <div class="skill-cat">Cloud & AWS</div>
+            <div class="skill-cat">Cloud & DevOps</div>
             <div class="skill-tags">
               <span class="tag">AWS Lambda</span>
               <span class="tag">Amazon S3</span>
               <span class="tag">AWS CLI</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Git</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">Vercel</span>
             </div>
           </div>
 
@@ -1038,22 +985,17 @@
             <div class="skill-tags">
               <span class="tag">OpenAI SDK</span>
               <span class="tag">Gemini API</span>
-              <span class="tag">mem0AI</span>
+              <span class="tag">mem0</span>
               <span class="tag">Cloudinary</span>
+              <span class="tag">Razorpay</span>
             </div>
           </div>
 
           <div class="reveal">
-            <div class="skill-cat">Tools</div>
+            <div class="skill-cat">Core</div>
             <div class="skill-tags">
-              <span class="tag">Git</span>
-              <span class="tag">GitHub</span>
-              <span class="tag">Docker</span>
+              <span class="tag">Data Structures & Algorithms</span>
               <span class="tag">Postman</span>
-              <span class="tag">VS Code</span>
-              <span class="tag">Eclipse</span>
-              <span class="tag">PuTTY</span>
-              <span class="tag">Vercel</span>
             </div>
           </div>
         </div>
@@ -1081,17 +1023,17 @@
               href="https://leetcode.com/u/akshayyy13/"
               target="_blank"
               rel="noopener"
-              ><b>LeetCode Knight</b><span>Peak Rating 1848 ↗</span></a
+              ><b>LeetCode</b><span>Max Rating 1848 ↗</span></a
             >
           </div>
           <div class="ach-card reveal">
             <b>GATE CSE</b><span>Qualified · 2024</span>
           </div>
           <div class="ach-card reveal">
-            <b>509 / 41,236</b><span>LeetCode Biweekly 175</span>
+            <b>509 / 41,236</b><span>Biweekly 175 · Top 1.3%</span>
           </div>
           <div class="ach-card reveal">
-            <b>1,255 / 26,850</b><span>LeetCode Biweekly 171</span>
+            <b>1,255 / 26,850</b><span>Biweekly 171 · Top 4.7%</span>
           </div>
           <div class="ach-card reveal">
             <a
@@ -1130,7 +1072,7 @@
         <div class="edu-card reveal">
           <div>
             <h3>B.Tech, Computer Science and Engineering</h3>
-            <p>Shri Shankaracharya Technical Campus — Chhattisgarh, Bhilai</p>
+            <p>Shri Shankaracharya Technical Campus — Bhilai, Chhattisgarh</p>
           </div>
           <div style="text-align: right">
             <div class="mono">2020 — 2024</div>
@@ -1153,6 +1095,9 @@
         <div class="btn-row" style="justify-content: center">
           <a href="mailto:akshay.codes13@gmail.com" class="btn btn-primary"
             >akshay.codes13@gmail.com</a
+          >
+          <a href="tel:+917357877122" class="btn btn-ghost"
+            >+91 7357877122</a
           >
         </div>
         <div class="foot-links">
