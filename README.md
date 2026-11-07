@@ -16,9 +16,7 @@ Personal portfolio site. Static HTML/CSS/JS, no build step, no framework.
 .
 ├── index.html
 └── assets/
-    ├── Akshay_Shrivastava_Resume.pdf   # linked from the "Download Resume" buttons
-    ├── ai-chat-demo.png                # captured live project screenshot
-    └── codebud-demo.png                # captured live project screenshot
+    └── Akshay_Shrivastava_Resume.pdf   # linked from the "Download Resume" buttons
 ```
 
 ## Run locally
